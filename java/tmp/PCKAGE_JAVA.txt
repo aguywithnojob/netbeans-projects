@@ -1,0 +1,22 @@
+Packages are used in Java in order to prevent naming conflicts, to control access, to make searching/locating and usage of classes, interfaces, enumerations and annotations easier, etc.
+
+A Package can be defined as a grouping of related types (classes, interfaces, enumerations and annotations ) providing access protection and name space management.
+
+Some of the existing packages in Java are::
+
+java.lang - bundles the fundamental classes
+
+java.io - classes for input , output functions are bundled in this package
+
+Programmers can define their own packages to bundle group of classes/interfaces, etc. It is a good practice to group related classes implemented by you so that a programmer can easily determine that the classes, interfaces, enumerations, annotations are related.
+
+Since the package creates a new namespace there won't be any name conflicts with names in other packages. Using packages, it is easier to provide access control and it is also easier to locate the related classes.
+
+Creating a package:
+While creating a package, you should choose a name for the package and include a package statement along with that name at the top of every source file that contains the classes, interfaces, enumerations, and annotation types that you want to include in the package.
+
+The package statement should be the first line in the source file. There can be only one package statement in each source file, and it applies to all types in the file.
+
+If a package statement is not used then the class, interfaces, enumerations, and annotation types will be placed in the current default package.
+
+To compile the Java programs with package statements you have to do use -d option as shown below.

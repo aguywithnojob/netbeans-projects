@@ -1,0 +1,22 @@
+class rain extends Thread
+{
+	public void run()
+	{
+		int i;
+		for(i=0;i<10;i++)
+		{	
+			if(i%2==0)
+			Thread.sleep(1000);
+			else
+			System.out.println("'''''''''''''''''")
+		}
+	}
+}
+class raintest
+{
+	public static void main(String[]arg)
+	{
+		rain obj=new rain();
+		rain.start();
+	}
+}
